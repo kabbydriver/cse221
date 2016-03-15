@@ -6,3 +6,5 @@ read: rand_read.c util.o
 
 seq: seq_read.c util.o
 	gcc -o seq_read seq_read.c util.o
+cont: contention.c util.o
+	gcc -o cont contention.c util.o
