@@ -16,7 +16,7 @@ void Die(char * err) {
 int main(int argc, char ** argv) {
 	int sock;
  	struct sockaddr_in server;
-	char * server_ip = "128.54.131.42";
+	char * server_ip = "127.0.0.1";
 
 	if (argc == 2) {
 		server_ip = argv[1];

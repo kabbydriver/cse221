@@ -25,7 +25,8 @@ int main(int argc, char ** argv) {
 	memset(buffer, 0, block_size);
 	int sock;
 	struct sockaddr_in server;
-	char * server_ip = "128.54.131.42";
+	//char * server_ip = "128.54.131.42";
+	char * server_ip = "127.0.0.1";
 
 	int server_port = 12001;
 

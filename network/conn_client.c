@@ -16,7 +16,7 @@ void Die(char * err) {
 int main(int argc, char ** argv) {
 	int sock;
  	struct sockaddr_in server;
-	char * server_ip = "128.54.131.42";
+	char * server_ip = "127.0.0.1";
 
 	if (argc == 2) {
 		server_ip = argv[1];
@@ -34,7 +34,10 @@ int main(int argc, char ** argv) {
 		perror("connect");
 		Die("connect() failed");
 	}
-	close(sock);
 	uint64_t end = mach_absolute_time();
+	printf("%llu\n", (end - start));
+	start = mach_absolute_time();
+	close(sock);
+	end = mach_absolute_time();
 	printf("%llu\n", (end - start));
 }

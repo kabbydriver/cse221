@@ -17,7 +17,7 @@ int main(int argc, char ** argv) {
 	int client_sock;
 	struct sockaddr_in server_addr;
 	struct sockaddr_in client_addr;
-	unsigned short server_port = 12001;
+	unsigned short server_port = 12002;
 
 	memset(&server_addr, 0, sizeof(server_addr));
 	server_addr.sin_family = AF_INET;
